@@ -1,0 +1,797 @@
+/* Yunun, Christine Mae D.    WD201 */
+
+/* Reset styles */
+body,header, nav, main, footer, h1, div, img, ul, section, video {
+  margin:0;
+  padding:0;
+  border:0;}
+
+/* ============================================= */
+/*         CSS Styles for body and hero          */
+/* ============================================= */
+body {
+  font-family: "Karla", sans-serif;
+  background: rgba(248, 195, 149, 0.57);
+}
+
+.hero-content {
+  text-align: left; 
+  position: absolute;
+  top: 50%;
+  left: 20px; 
+  transform: translateY(-50%);
+  width: 50%; 
+  margin-top: 50px;
+  font-size: 25px;
+  line-height: 1.5%;
+  color: white;
+  font-family: "Katibeh", Arial;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================= */
+/*               CSS Styles for nav              */
+/* ============================================= */
+.main-page nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px; 
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  max-height: 70px;
+  overflow: hidden; 
+}
+
+.main-page nav .logo {
+  padding: 5px 20px;
+  float: left;
+  font-size: 36px;
+  text-transform: lowercase;
+  color: #fff;
+  font-family: "Katibeh", Arial;
+  margin-right: auto;
+}
+
+.main-page nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-page nav ul li a {
+  line-height: 40px;
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-page nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+}
+
+.other-pages nav{
+  width: 100%;
+  height: 100px;
+  background-color: #48342D;
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  z-index: 1;
+  position: relative;
+  
+}
+
+.other-pages nav .logo{
+  padding: 5px 20px;
+  float: left;
+  font-size: 36px;
+  text-transform: lowercase;
+  color: #fff;
+  font-family: "Katibeh", Arial;
+  margin-right: auto;
+}
+.other-pages nav ul{
+  float: right;
+}
+
+.other-pages nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.other-pages nav ul li a{
+  line-height: 40px;
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.other-pages nav ul li a:hover {
+  background: rgba(92, 57, 57, 0.7);
+  border-radius: 6px;
+}
+
+.other-pages nav .logo a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ============================================= */
+/*           Behind the Scenes section           */
+/* ============================================= */
+* {
+  box-sizing: border-box;
+}
+
+.bts-section{
+  margin: 0;
+}
+
+.bts-section h2{
+  text-align: left;
+  margin: 20px;
+  color: #48342D;
+  text-transform: uppercase;
+}
+
+.text-bts{
+  margin-bottom: 20px;
+}
+
+
+.row {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  
+}
+
+.column {
+  width: 25%; 
+  padding: 5px;
+  border: 1px;
+}
+
+.bts-section img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.bts-section2 {
+  margin: 0;
+}
+
+.bts-section2 h2 {
+  text-align: left;
+  margin: 20px;
+  color: #48342D;
+  text-transform: uppercase;
+}
+
+.text-bts2 {
+  margin-bottom: 20px;
+}
+
+.row2 {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+.column2 {
+  width: 25%; 
+  padding: 5px;
+}
+
+.bts-section2 img {
+  width: 100%;
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+/* ============================================= */
+/*           Discover section styles             */
+/* ============================================= */
+.discover-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-disc {
+  text-align: left;
+  color: #48342D;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.disc-row {
+  display: flex;
+  justify-content: center;
+  width: 80%; 
+}
+
+.disc-item {
+  display: flex; 
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  height: 80px; 
+  width: 300px;
+}
+
+.disc-item img {
+  width: 20%; 
+  height: auto; 
+  max-height: 100%; 
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.disc-item p {
+  font-size: 14px;
+  margin: 0; 
+}
+
+/* ============================================= */
+/*               Join section styles             */
+/* ============================================= */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1{
+  text-align: center; 
+  color: #48342D;
+  font-family: "Katibeh", Arial;
+  font-size: 60px;
+}
+
+.container h2{
+  text-align: center; 
+  color: #ffffff;
+}
+
+form {
+  background-size: cover;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #ccc;
+
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 50px; 
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* ============================================= */
+/*          Trivia table and list styles         */
+/* ============================================= */
+.table-container {
+  text-align: center;
+  font-family: "Katibeh", Arial, Helvetica, sans-serif;
+  color: #50403B;
+  font-size: 25px;
+}
+
+.trivia-table {
+  width: 35%; 
+  margin: 100px auto; 
+  background-color: #48342D;
+  padding: 10px;
+  margin-top: 0;
+ 
+}
+
+.trivia-table th, .trivia-table td {
+  padding: 10px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.trivia-table th {
+  background-color: #DCC4AE;
+  font-weight: bold;
+  text-align: center;
+  color: #48342D;
+}
+
+.mobile-list {
+  list-style-type: none; 
+  padding-left: 0; 
+  font-size: 14px;
+}
+
+.mobile-list li {
+  margin-bottom: 15px; 
+}
+
+.mobile-list strong {
+  display: block;
+  margin-bottom: 5px; 
+}
+
+.mobile-list strong:nth-of-type(1) {
+  margin-left: 20px;
+}
+
+.mobile-list strong:nth-of-type(2) {
+  margin-left: 20px; 
+}
+
+.mobile-list strong:nth-of-type(3) {
+  margin-left: 20px; 
+}
+
+.mobile-list strong:nth-of-type(4) {
+  margin-left: 20px; 
+}
+
+/* ============================================= */
+/*                       Video                   */
+/* ============================================= */
+.intro-vid {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 20px auto; 
+}
+
+.intro-vid video {
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
+}
+
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  align-items: flex-start;
+}
+
+.card{
+  width: 325px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  
+}
+
+/* ============================================= */
+/*             Article / Card Style              */
+/* ============================================= */
+.card img{
+  width: 100%;
+  height: auto;
+}
+
+.card-content{
+  padding: 16px;
+}
+
+.card-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card-content p{
+  color: #504A4A;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card-content .btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #504A4A;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
+
+.text-card{
+  text-align: left;
+  margin: 20px;
+  color: #48342D;
+  text-transform: uppercase;
+}
+
+/* ============================================= */
+/*               Footer styles                   */
+/* ============================================= */
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-content a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links img {
+  width: 24px; 
+  height: 24px;
+  align-items: center;
+}
+
+.copyright p{
+  font-size: 10px;
+}
+
+/* ============================================= */
+/*              Mobile Navigation                */
+/* ============================================= */
+.mobile-nav {
+  display: flex; 
+  align-items: center; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #48342D;
+  z-index: 1000;
+  max-height: 70px;
+}
+
+.menu-icon {
+  font-size: 16px; 
+  color: white; 
+  cursor: pointer; 
+  margin-right: 10px; 
+}
+
+#menu-links {
+  display: none; 
+  flex-direction: column; 
+  position: absolute; 
+  top: 50px; 
+  left: 0; 
+  width: 100%; 
+  background-color: rgba(72, 52, 45, 0.8); 
+}
+
+#menu-links.show {
+  display: flex; 
+}
+
+
+#menu-links a {
+  color: rgb(255, 255, 255); 
+  text-decoration: none; 
+  padding: 10px; 
+  transition: background-color 0.3s; 
+}
+
+.nav-title {
+  flex-grow: 1; 
+  text-align: center; 
+  color: white; 
+  text-decoration: none; 
+  font-size: 20px; 
+  text-transform: lowercase;
+  font-family: "Katibeh", Arial;
+}
+
+#menu-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* ============================================= */
+/*                Mobile Query                   */
+/* ============================================= */
+@media (max-width: 600px), print {
+  .main-page.tablet-desktop{
+    display: none;}
+
+  .other-pages.tablet-desktop {
+    display: none;}
+
+  .hero-content {
+    font-size: 16px;
+    width: 80%; 
+    left: 5px; 
+   top: 20%;}
+
+  .column {
+    width: 50%; 
+    padding: 5px;}
+
+  .bts-section h2 {
+    margin: 10px; 
+    font-size: 18px;}
+
+  .text-bts {
+    margin-bottom: 15px;
+    font-size: 16px;}
+
+  .bts-section img {
+    height: 100px;}
+    
+  .discover-section {
+    padding: 10px; }
+
+  .discover-section {
+    padding: 10px; }
+
+  .disc-row {
+    flex-direction: column; 
+    align-items: center;
+    width: 100%; }
+
+  .disc-item {
+    width: 90%; 
+    height: auto;}
+
+  .disc-item img {
+    width: 30%;}
+
+  .disc-item p {
+    font-size: 16px;}
+  
+  .trivia-table {
+   display: none;}
+
+  .mobile-list {
+    display: block; 
+    margin: 20px; 
+    font-family: 'Karla', sans-serif;}
+
+  .intro-vid video {
+    margin-top: 60px;
+    max-width: 60%;}
+
+  .bts-section2 .column2 {
+    width: 40%;}
+
+  .bts-section2 h2 {
+    font-size: 15px;}
+
+  .bts-section2 img{
+    width: 100%;
+    height: 100px;}
+
+  .card-container {
+    margin-top: 50px; }
+
+  .card {
+    width: 100%;
+    max-width: 350px; 
+    margin: 10px;} 
+
+  .card-content h3 {
+    font-size: 15px; }
+
+  .card-content p {
+    font-size: 14px;}
+
+  .card-content .btn {
+    padding: 6px 12px; }
+
+  .text-card h2{
+    font-size: 15px;}
+
+  .card {
+    width: 70%; 
+    max-width: 300px; 
+    margin: 10px; }
+
+  .card img {
+    height: 150px;}
+}
+
+/* ============================================= */
+/*                Desktop Query                  */
+/* ============================================= */
+@media (min-width: 1025px), print {
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-list{
+    display: none;
+  }
+  .bts-section2 img {
+    height: 200px;
+  }
+}
+
+/* ============================================= */
+/*                Tablet Query                   */
+/* ============================================= */
+@media (min-width: 600px) and (max-width: 1024px), print {
+  .mobile-list{
+    display: none;}
+
+  .mobile-nav {
+    display: none;}
+ 
+  .main-page, .other-pages {
+    display: block;}
+
+  .mobile-nav {
+    display: none;}
+
+  .other-page nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-height: 70px;
+    overflow: hidden; }
+
+  .trivia-table {
+    width: 80%; 
+    margin: 50px auto; 
+    padding: 20px; }
+
+  .trivia-table th, .trivia-table td {
+    padding: 15px; }
+
+  .table-container {
+    font-size: 20px; }
+
+  .trivia-table th {
+    font-size: 18px; }
+
+  .trivia-table td {
+    font-size: 16px; }
+
+  .intro-vid {
+    margin: 30px auto;}
+
+  .intro-vid video {
+      width: 90%; 
+      max-width: 700px;}
+
+  .hero-content {
+    top: 20%; 
+    font-size: 22px;
+    width: 70%; }
+
+  .bts-section h2 {
+    font-size: 24px; 
+    margin: 15px; }
+
+  .row {
+    display: flex; 
+    justify-content: space-between; }
+
+  .column {
+    width: 45%;
+    padding: 10px; }
+
+  .bts-section img {
+    height: 180px;
+    margin-right: 10px;}
+
+  .disc-row {
+    width: 90%; }
+
+  .disc-item {
+    width: 90%; }
+
+  .container {
+    padding: 15px; }
+
+  .container h1 {
+    font-size: 40px; }
+
+  .bts-section2 h2 {
+    font-size: 24px; 
+    margin: 15px; }
+  
+  .row2 {
+    justify-content: space-between;}
+  
+  .column2 {
+    width: 45%; 
+    padding: 5px; }
+  
+  .bts-section2 img {
+    height: 140px;
+    object-fit: cover; }
+}
+
+/* ============================================= */
+/*                Media Query Print              */
+/* ============================================= */
+
+@media print{
+  body{
+      background-color: #fff;
+      color: #000;
+  }
+  .card-container,
+    .card-content,
+    .discover-section {
+        box-shadow: none;
+        border: none;
+    }
+}

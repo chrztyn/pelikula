@@ -1,0 +1,146 @@
+<!-- Yunun, Christine Mae D.    WD201 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+  <link href= "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Pelikula</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="mobile-nav">
+    <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776;</div> 
+    </a>
+    <a href="index.html" class="nav-title">Pelikula</a>
+</nav>
+<div id="menu-links">
+    <a href="trivia.html">TRIVIA</a>
+    <a href="films.html">FILMS</a>
+    <a href="shows.html">SHOWS</a>
+</div>
+
+  <header class ="main-page tablet-desktop">
+    <nav>
+      <div class="logo">Pelikula</div>
+      <ul>
+        <li><a href="trivia.html">TRIVIA</a></li>
+        <li><a href="films.html">FILMS</a></li>
+        <li><a href="shows.html">SHOWS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/pelikula-main.jpg" alt="Hero image">
+      <div class="hero-content">
+        <h2>Explore film secrets.</h2>
+        <h2>Enjoy insider articles.</h2>
+        <h2>Spread the word with your friends!</h2>
+      </div>
+    </section>
+
+    <section class="bts-section">
+      <div class="text-bts">
+        <h2>Explore Behind-the-Scenes</h2>
+      </div>
+      <div class = "row">
+        <div class ="column">
+          <img src="images/bts-1.png" >
+        </div>
+        
+        <div class ="column">
+          <img src="images/bts-2.jpg" >
+        </div>
+
+        <div class ="column">
+          <img src="images/bts-3.jpg" >
+        </div>
+
+        <div class ="column">
+          <img src="images/bts-4.jpg">
+        </div>
+    </section>
+
+    <section class="discover-section">
+      <div class ="text-disc">
+        <h2>Discover fun facts</h2>
+      </div>
+      <div class="disc-row">
+          <div class="disc-item">
+              <img src="images/message-icon.png" alt="Submit your trivia">
+              <p>Submit your trivia</p>
+          </div>
+          <div class="disc-item">
+            
+              <img src="images/movie-icon.png" alt="Watch Behind-the-Scenes and many more!">
+              <p>Watch Behind-the-Scenes and many more!</p>
+          </div>
+      </div>
+
+      <div class="disc-row">
+        <div class="disc-item">
+              <img src="images/book-icon.png" alt="Read articles">
+              <p>Read articles</p>
+          </div>
+          <div class="disc-item">
+              <img src="images/heart-icon.png" alt="Show some love with your favorites movie">
+              <p>Show some love with your favorites movie</p>
+          </div>
+      </div>
+  </section>
+
+  <div class="container">
+    <h1>Join the Fun!</h1>
+    <form style="background-image: url('images/forms.jpg')">
+      <h2>Submit Your Trivia</h2>
+        <div class="form-group">
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic">
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">Select Category</option>
+                <option value="Sports">Directors</option>
+                <option value="History">Actors</option>
+                <option value="Movies">History</option>
+                <option value="Music">Box Office</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="trivia-info">Trivia Information:</label>
+            <textarea id="trivia-info" name="trivia-info"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source">
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+<footer>
+  <div class="footer-content">
+    <p><a href="https://www.instagram.com/ynchrztn/profilecard/?igsh=MWtxNzluYTJkdnd1eA==">peli.kula</a></p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ynchrztn/profilecard/?igsh=MWtxNzluYTJkdnd1eA==e">
+        <img src="images/instagram-logo.png" alt="Instagram logo">
+      </a>
+      <a href="https://www.facebook.com/share/pVrozdt8RDARQnR1/?mibextid=LQQJ4d">
+        <img src="images/facebook-logo.png" alt="Facebook logo">
+      </a>
+    </div>
+    <p><a href="https://www.facebook.com/share/pVrozdt8RDARQnR1/?mibextid=LQQJ4d">pelikula</a></p>
+  </div>
+  <div class="copyright"><p>&copy; Copyright 2024</p></div>
+</footer>
+<script src = "script.js"></script>
+</body>
+</html>
+
+
